@@ -8,23 +8,21 @@ const city_name=document.querySelector(".city-name")
 const humidity=document.querySelector(".humidity .val")
 const wind=document.querySelector(".wind .val")
 
+updateWeather("New Delhi")
+
+search_icon.addEventListener("click", ()=>{
+    city=search_box.value
+    updateWeather(city)
+})
+
 async function updateWeather(city)
 {
     const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
     const data=await response.json();
 
     weather_icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
-    temperature.innerHTML=Math.round(data.main.temp)
+    temperature.innerHTML=Math.round(data.main.temp)+"°C"
     city_name.innerHTML=data.name
     humidity.innerHTML=data.main.humidity+"%"
     wind.innerHTML=data.wind.speed+" km/h"
-    console.log(data)
 }
-
-search_icon.addEventListener("click", ()=>{
-    city=search_box.value
-    city=(city==="")? "New Delhi":city
-    updateWeather(city)
-})
-
-console.log(wind)
