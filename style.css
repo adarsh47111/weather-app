@@ -43,8 +43,8 @@ body{
     font-size: 15px;
 }
 .search-icon{
-    height: 35px;
     /* border: 2px solid; */
+    height: 35px;
     margin: 0px 4px;
     border-radius: 50%;
     padding: 4px;
