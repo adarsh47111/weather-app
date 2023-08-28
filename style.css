@@ -1,0 +1,153 @@
+body{
+    /* border: 2px solid; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.container{
+    /* border: 2px solid; */
+    border-radius: 20px;
+    height: 500px;
+    width: 400px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-image: linear-gradient(150deg, rgb(57, 204, 135), rgb(59, 57, 207));
+    box-shadow: 4px 4px 4px rgb(75, 74, 74);
+}
+
+.header{
+    /* border: 2px solid; */
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
+    margin: 5px 0px;
+    padding: 0px 10px;
+    height: 40px;
+    border: 2px rgb(254, 254, 254);
+    border-radius: 30px;
+    background-color: white;
+    flex-grow: 1;
+    font-size: 15px;
+}
+
+.search-bar{
+    border: 0px;
+    background-color: white;
+    outline: 0;
+}
+
+.microphone{
+    height: 30px;
+    width: 30px;
+    transition: 0.5s;
+}
+
+.microphone:hover{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.search-icon{
+    /* border: 2px solid; */
+    height: 35px;
+    margin: 0px 4px;
+    border-radius: 50%;
+    padding: 4px;
+    transition: 0.5s;
+}
+
+.search-icon:hover{
+    height: 45px;
+    cursor: pointer;
+}
+
+.text-to-speech{
+    /* border: 2px solid; */
+    height: 40px;
+    margin: 0px 4px;
+    border-radius: 50%;
+    padding: 4px;
+    transition: 0.5s;
+}
+.text-to-speech:hover{
+    height: 45px;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------*/
+
+.main{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+.weather-icon{
+    height: 200px;
+    width: 200px;
+}
+.temp{
+    font-size: 70px;
+    color: white;
+}
+.city-name{
+    font-size: 40px;
+    color: white;
+}
+
+/* ----------------------------------- */
+
+.footer{
+    /* border: 2px solid; */
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.humidity-box{
+    display: flex;
+    font-size: 15px;
+    color: rgb(230, 227, 227);
+}
+.humidity-icon{
+    height: 40px;
+    width: 40px;
+}
+.humidity-box .humidity p{
+    margin: 0px;
+    padding: 2px;
+}
+
+.wind-box{
+    display: flex;
+    font-size: 15px;
+    color: rgb(230, 227, 227);
+}
+.wind-icon{
+    height: 40px;
+    width: 40px;
+}
+.wind-box .wind p{
+    margin: 0px;
+    padding: 2px;
+}
