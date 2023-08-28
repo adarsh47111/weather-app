@@ -1,0 +1,116 @@
+body{
+    /* border: 2px solid; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+}
+
+.container{
+    /* border: 2px solid; */
+    border-radius: 20px;
+    height: 500px;
+    width: 400px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-image: linear-gradient(150deg, rgb(57, 204, 135), rgb(59, 57, 207));
+    box-shadow: 4px 4px 4px rgb(75, 74, 74);
+}
+
+.header{
+    /* border: 2px solid; */
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.search-box{
+    margin: 5px;
+    padding: 0px 20px;
+    height: 40px;
+    border: 2px rgb(254, 254, 254);
+    border-radius: 30px;
+    background-color: rgb(239, 237, 235);
+    flex-grow: 1;
+    outline: 0;
+}
+.search-icon{
+    height: 35px;
+    /* border: 2px solid; */
+    margin: 0px 4px;
+    border-radius: 50%;
+    padding: 4px;
+    transition: 0.5s;
+}
+
+.search-icon:hover{
+    height: 45px;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------*/
+
+.main{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon{
+    height: 200px;
+    width: 200px;
+}
+.temp{
+    font-size: 100px;
+    color: white;
+}
+.city-name{
+    font-size: 40px;
+    color: white;
+}
+
+/* ----------------------------------- */
+
+.footer{
+    /* border: 2px solid; */
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.humidity-box{
+    display: flex;
+    font-size: 18px;
+    color: rgb(230, 227, 227);
+}
+.humidity-icon{
+    height: 50px;
+    width: 50px;
+}
+.humidity-box .humidity p{
+    margin: 0px;
+    padding: 2px;
+}
+
+.wind-box{
+    display: flex;
+    font-size: 18px;
+    color: rgb(230, 227, 227);
+}
+.wind-icon{
+    height: 50px;
+    width: 50px;
+}
+.wind-box .wind p{
+    margin: 0px;
+    padding: 2px;
+}
